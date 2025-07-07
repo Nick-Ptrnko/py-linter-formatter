@@ -1,5 +1,5 @@
 '''
-                ПРИКЛАД КОДУ З if-else ДЛЯ СЛОВНИКІВ
+                ПРИКЛАД КОДУ з if-else ДЛЯ СЛОВНИКІВ
 people = [
     {"name": "Ivan", "age": 18},
     {"name": "Mariia", "age":20},
@@ -24,6 +24,7 @@ def format_linter_error(error: dict) -> dict:
 '''
 #       ФУНКЦІЯ ЗАМІНЯЄ ОДНЕ ЗНАЧЕННЯ КЛЮЧА НА ІНШЕ
 #      ЯКЩО ЗНАЧЕННЯ ЯКЕ ПРИХОДИТЬ ВІДСУТНЄ, ВОНА ПОВЕРНЕ None
+#     ПОТРІБНО ОБ'ЄДНАТИ ЦЮ ФУНКЦІЮ З ФУНКЦІЄЮ №1 З ЗАВДАННЯ ТА ЗРОБИТИ ЇЇ В ОДИН РЯДОК
 def Changing_a_key(key:str) -> str:
     if key == "code":
         return "name"
@@ -35,7 +36,7 @@ def Changing_a_key(key:str) -> str:
         return "message"
     return None
 
-#                   ФУНКЦІЯ №1 З ЗАВДАННЯ
+#                   ФУНКЦІЯ №1 З ЗАВДАННЯ ЦЕ ОСТАННЄ ЩО ПОТРІБНО ЗРОБИТИ - ПЕРЕРОБИТИ ЇЇ
 def format_linter_error(error: dict) -> dict:
     temp_data = {Changing_a_key(key): value
                  for key, value in error.items()
